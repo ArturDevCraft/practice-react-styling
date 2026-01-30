@@ -1,7 +1,5 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { ThemeProvider } from 'styled-components';
-import { primaryTheme, secondaryTheme } from './themes';
 
 import Task01 from './../../01/Task01';
 import Task02 from './../../02/Task02';
@@ -21,14 +19,8 @@ const App = () => {
 						<h2>Komponenty Twoje</h2>
 					</Col>
 				</Row>
-				<ThemeProvider theme={primaryTheme}>
-					<Task01 themeName={primaryTheme.name} />
-				</ThemeProvider>
-				<ThemeProvider theme={secondaryTheme}>
-					<Task01 themeName={secondaryTheme.name} />
-				</ThemeProvider>
-				<Task01 />
 
+				<Task01 />
 				<Task02 />
 				<Task03 />
 				<Task04 />
